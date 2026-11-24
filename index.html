@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WONDER ESCAPES - Discover Beyond Boundaries. Curated luxury travel expeditions, bespoke journeys, and unforgettable world discoveries.">
+    <meta name="author" content="UCS 745 Cloud and DevOps Student">
+    <title>Wonder Escapes — Discover Beyond Boundaries</title>
+
+    <!-- Google Fonts: Playfair Display (Serif Editorial) + Plus Jakarta Sans (Clean Modern Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Global Announcement / Currency Ticker -->
+    <div class="top-banner">
+        
+    </div>
+
+    <!-- 1. NAVIGATION BAR -->
+    <header class="site-header" id="header">
+        <div class="nav-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="brand-logo" aria-label="Wonder Escapes Home">
+                <span class="logo-mark">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    </svg>
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">WONDER ESCAPES</span>
+                    <span class="brand-sub">EXPEDITIONS</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="desktop-nav" aria-label="Primary Navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li class="nav-item"><a href="#experiences" class="nav-link">Experiences</a></li>
+                    <li class="nav-item"><a href="#trips" class="nav-link">Featured Trips</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Navigation Actions -->
+            <div class="nav-actions">
+                <button class="search-trigger-btn" id="searchTriggerBtn" aria-label="Quick Search Destinations">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+                <a href="#destinations" class="btn btn-nav">Explore Now</a>
+                <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div class="mobile-drawer" id="mobileDrawer">
+            <div class="drawer-header">
+                <div class="brand-text">
+                    <span class="brand-name">WONDER ESCAPES</span>
+                    <span class="brand-sub">EXPEDITIONS</span>
+                </div>
+                <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">&times;</button>
+            </div>
+            <ul class="drawer-menu">
+                <li><a href="#home" class="drawer-link">Home</a></li>
+                <li><a href="#destinations" class="drawer-link">Destinations</a></li>
+                <li><a href="#experiences" class="drawer-link">Experiences</a></li>
+                <li><a href="#trips" class="drawer-link">Featured Trips</a></li>
+                <li><a href="#about" class="drawer-link">About Us</a></li>
+                <li><a href="#testimonials" class="drawer-link">Reviews</a></li>
+                <li><a href="#contact" class="drawer-link">Contact</a></li>
+            </ul>
+            <div class="drawer-footer">
+                <a href="#destinations" class="btn btn-primary btn-block">Explore All Destinations</a>
+                <p class="drawer-tagline">Discover Beyond Boundaries.</p>
+            </div>
+        </div>
+        <div class="mobile-backdrop" id="mobileBackdrop"></div>
+    </header>
+
+    <main>
+        <!-- 2. HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-media-wrapper">
+                <img 
+                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2000&q=85" 
+                    alt="Pristine mountain valley landscape bathed in golden dawn light" 
+                    class="hero-bg-img"
+                    loading="eager"
+                >
+                <div class="hero-overlay"></div>
+                <div class="hero-vignette"></div>
+            </div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-eyebrow">
+                        <span class="eyebrow-line"></span>
+                        <span class="eyebrow-text">DISCOVER BEYOND BOUNDARIES</span>
+                    </div>
+
+                    <h1 class="hero-headline">
+                        The World Is Waiting.<br>
+                        <span class="editorial-italic">Go Find It.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Curated expeditions for discerning travelers seeking uncommon beauty, 
+                        deep cultural resonance, and extraordinary sanctuaries across the globe.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#destinations" class="btn btn-primary btn-lg">
+                            <span>Explore Destinations</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#experiences" class="btn btn-outline-light btn-lg">
+                            <span>Discover More</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Floating Editorial Highlights Bar -->
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-number">45+</span>
+                        <span class="highlight-label">Rare Sanctuaries</span>
+                    </div>
+                    <div class="highlight-divider"></div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">100%</span>
+                        <span class="highlight-label">Private Expeditions</span>
+                    </div>
+                    <div class="highlight-divider"></div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">99.4%</span>
+                        <span class="highlight-label">Guest Satisfaction</span>
+                    </div>
+                    <div class="highlight-divider"></div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">24 / 7</span>
+                        <span class="highlight-label">Private Concierge</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Scroll Down Cue -->
+            <a href="#destinations" class="hero-scroll-indicator" aria-label="Scroll to destinations">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">SCROLL TO DISCOVER</span>
+            </a>
+        </section>
+
+        <!-- 3. DESTINATION EXPLORER -->
+        <section class="section-padding destinations-section" id="destinations">
+            <div class="section-container">
+                <!-- Section Header -->
+                <div class="section-header text-center">
+                    <span class="section-badge">CURATED SANCTUARIES</span>
+                    <h2 class="section-title">Destination Explorer</h2>
+                    <p class="section-subtitle">
+                        Handpicked horizons crafted with architectural poise and natural splendor. 
+                        Filter by theme or search directly for your next sanctuary.
+                    </p>
+                </div>
+
+                <!-- Live Search & Category Filter Toolbar -->
+                <div class="destination-toolbar">
+                    <div class="search-box-wrapper">
+                        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input 
+                            type="text" 
+                            id="destinationSearchInput" 
+                            class="search-input" 
+                            placeholder="Search by country, city, or experience (e.g. Kashmir, Alps, Beach)..."
+                            aria-label="Search destinations"
+                        >
+                        <button class="clear-search-btn" id="clearSearchBtn" aria-label="Clear search text">&times;</button>
+                    </div>
+
+                    <div class="filter-pills" role="tablist" aria-label="Destination filter categories">
+                        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Havens (6)</button>
+                        <button class="filter-btn" data-filter="mountain" role="tab" aria-selected="false">Mountains & Alps</button>
+                        <button class="filter-btn" data-filter="beach" role="tab" aria-selected="false">Coastal & Islands</button>
+                        <button class="filter-btn" data-filter="culture" role="tab" aria-selected="false">Cultural Heritage</button>
+                        <button class="filter-btn" data-filter="luxury" role="tab" aria-selected="false">Luxury Retreats</button>
+                    </div>
+                </div>
+
+                <!-- Search Results Status Bar -->
+                <div class="results-meta">
+                    <span id="resultsCount">Showing all 6 curated destinations</span>
+                    <button id="resetFilterBtn" class="text-link-btn" style="display: none;">Reset all filters</button>
+                </div>
+
+                <!-- 6 Destination Cards Grid -->
+                <div class="destinations-grid" id="destinationsGrid">
+                    
+                    <!-- 1. Switzerland -->
+                    <article class="destination-card" data-category="mountain luxury" data-name="Switzerland Zermatt Swiss Alps Europe">
+                        <div class="card-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1000&q=80" 
+                                alt="Snow-capped alpine peaks of Zermatt in Switzerland"
+                                loading="lazy"
+                            >
+                            <span class="card-tag">Alpine Luxury</span>
+                            <div class="card-rating">
+                                <span class="star-icon">★</span>
+                                <span class="rating-val">4.9</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Zermatt, Switzerland</span>
+                            </div>
+                            <h3 class="card-title">Switzerland</h3>
+                            <p class="card-description">
+                                Towering glacial peaks, world-class heli-skiing, and Michelin-starred culinary chalets enveloped in timeless alpine tranquility.
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <span class="price-from">From</span>
+                                    <span class="price-amount">Rs. 4,85,000</span>
+                                </div>
+                                <button class="btn btn-card-explore" data-destination="switzerland">
+                                    <span>Explore</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2. Bali -->
+                    <article class="destination-card" data-category="beach luxury" data-name="Bali Ubud Uluwatu Indonesia Island Tropical Beach">
+                        <div class="card-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=80" 
+                                alt="Sacred Balinese water temple amidst lush tropical foliage"
+                                loading="lazy"
+                            >
+                            <span class="card-tag">Island Sanctuary</span>
+                            <div class="card-rating">
+                                <span class="star-icon">★</span>
+                                <span class="rating-val">4.7</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Ubud & Uluwatu, Bali</span>
+                            </div>
+                            <h3 class="card-title">Bali</h3>
+                            <p class="card-description">
+                                Verdant terraced rice paddies, clifftop ocean sanctuaries, sacred temple ceremonies, and serene private bamboo estates.
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <span class="price-from">From</span>
+                                    <span class="price-amount">Rs. 4,00,000</span>
+                                </div>
+                                <button class="btn btn-card-explore" data-destination="bali">
+                                    <span>Explore</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 3. Kashmir -->
+                    <article class="destination-card" data-category="mountain culture" data-name="Kashmir Srinagar Gulmarg India Himalayas Paradise Valley">
+                        <div class="card-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=1000&q=80" 
+                                alt="Traditional shikara boat gently gliding on the serene waters of Dal Lake in Kashmir"
+                                loading="lazy"
+                            >
+                            <span class="card-tag">Paradise Valley</span>
+                            <div class="card-rating">
+                                <span class="star-icon">★</span>
+                                <span class="rating-val">4.97</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Srinagar & Gulmarg, Kashmir</span>
+                            </div>
+                            <h3 class="card-title">Kashmir</h3>
+                            <p class="card-description">
+                                Celebrated as 'Heaven on Earth', featuring handcrafted cedar houseboats on Dal Lake, saffron valleys, and snowbound Himalayan glades.
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <span class="price-from">From</span>
+                                    <span class="price-amount">Rs. 2,40,000</span>
+                                </div>
+                                <button class="btn btn-card-explore" data-destination="kashmir">
+                                    <span>Explore</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4. Paris -->
+                    <article class="destination-card" data-category="culture luxury" data-name="Paris France Le Marais Seine Europe Fashion Architecture">
+                        <div class="card-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1000&q=80" 
+                                alt="Haussmannian Parisian architecture bathed in warm evening sunset light"
+                                loading="lazy"
+                            >
+                            <span class="card-tag">Urban Elegance</span>
+                            <div class="card-rating">
+                                <span class="star-icon">★</span>
+                                <span class="rating-val">4.94</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Le Marais & Saint-Germain, Paris</span>
+                            </div>
+                            <h3 class="card-title">Paris</h3>
+                            <p class="card-description">
+                                Private museum viewings, haute couture ateliers, celebrated cellar tastings, and gilded evening salons along the tranquil Seine.
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <span class="price-from">From</span>
+                                    <span class="price-amount">Rs. 4,10,000</span>
+                                </div>
+                                <button class="btn btn-card-explore" data-destination="paris">
+                                    <span>Explore</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 5. Santorini -->
+                    <article class="destination-card" data-category="beach luxury" data-name="Santorini Oia Caldera Greece Aegean Sea Islands">
+                        <div class="card-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1000&q=80" 
+                                alt="Whitewashed cubic villas and cobalt blue domes of Oia overlooking the caldera"
+                                loading="lazy"
+                            >
+                            <span class="card-tag">Aegean Haven</span>
+                            <div class="card-rating">
+                                <span class="star-icon">★</span>
+                                <span class="rating-val">4.99</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Oia & Caldera, Santorini</span>
+                            </div>
+                            <h3 class="card-title">Santorini</h3>
+                            <p class="card-description">
+                                Sculpted whitewashed cliffside suites, private catamaran sails across cobalt waters, volcanic vineyards, and fiery Aegean sunsets.
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <span class="price-from">From</span>
+                                    <span class="price-amount">Rs. 3,92,000</span>
+                                </div>
+                                <button class="btn btn-card-explore" data-destination="santorini">
+                                    <span>Explore</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 6. Japan -->
+                    <article class="destination-card" data-category="culture mountain luxury" data-name="Japan Kyoto Mount Fuji Tokyo Ryokan Onsen Asia">
+                        <div class="card-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80" 
+                                alt="Historic five-story pagoda surrounded by lush foliage and autumn hues in Kyoto"
+                                loading="lazy"
+                            >
+                            <span class="card-tag">Zen Sanctuary</span>
+                            <div class="card-rating">
+                                <span class="star-icon">★</span>
+                                <span class="rating-val">4.98</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-location">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Kyoto & Hakone, Japan</span>
+                            </div>
+                            <h3 class="card-title">Japan</h3>
+                            <p class="card-description">
+                                Thousand-year-old cedar shrines, secluded onsen ryokans beneath Mount Fuji, meditative tea ceremonies, and master kaiseki gastronomy.
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <span class="price-from">From</span>
+                                    <span class="price-amount">Rs. 5,60,000</span>
+                                </div>
+                                <button class="btn btn-card-explore" data-destination="japan">
+                                    <span>Explore</span>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Empty State for Search -->
+                <div class="empty-state" id="emptyState" style="display: none;">
+                    <div class="empty-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3>No matching destinations discovered</h3>
+                    <p>We could not find any sanctuaries matching your query. Try searching for "Alps", "Kashmir", "Bali", or reset filters.</p>
+                    <button class="btn btn-secondary" id="emptyResetBtn">Show All Destinations</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. TRAVEL EXPERIENCES -->
+        <section class="section-padding experiences-section" id="experiences">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-badge">SIGNATURE PATHWAYS</span>
+                    <h2 class="section-title">Travel Experiences</h2>
+                    <p class="section-subtitle">
+                        Every traveler pursues a distinct harmony. Whether seeking altitude, tides, ancestral stories, or profound silence, our journeys are structured around your deepest instinct.
+                    </p>
+                </div>
+
+                <!-- 4 Interactive Experience Cards -->
+                <div class="experiences-grid">
+                    
+                    <!-- 1. Mountain Adventures -->
+                    <div class="experience-card" data-exp="mountain">
+                        <div class="experience-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" 
+                                alt="Dramatically illuminated mountain peaks under dynamic sky"
+                                loading="lazy"
+                            >
+                            <div class="experience-overlay"></div>
+                            <span class="exp-badge">01 / ELEVATION</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="exp-icon-wrap">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                                    <path d="M8 3l4 8 5-5 5 15H2L8 3z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="experience-title">Mountain Adventures</h3>
+                            <p class="experience-text">
+                                Heli-access untouched powder in the Swiss Alps, track snow leopards in the Himalayas, and rest in secluded heated geodesic domes beneath indigo starry skies.
+                            </p>
+                            <ul class="experience-perks">
+                                <li>Private IFMGA-certified alpine guides</li>
+                                <li>High-altitude luxury basecamps</li>
+                                <li>Exclusive heli-transfers & glacier trekking</li>
+                            </ul>
+                            <a href="#destinations" class="experience-link" data-filter-target="mountain">
+                                <span>View Mountain Escapes</span> &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 2. Beach Escapes -->
+                    <div class="experience-card" data-exp="beach">
+                        <div class="experience-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" 
+                                alt="Pristine white sand beach gently touched by azure waves"
+                                loading="lazy"
+                            >
+                            <div class="experience-overlay"></div>
+                            <span class="exp-badge">02 / COASTLINE</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="exp-icon-wrap">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                                    <path d="M2 12h20"></path>
+                                    <path d="M20 12v8H4v-8"></path>
+                                    <path d="m4 6 8-4 8 4"></path>
+                                    <path d="M12 2v20"></path>
+                                </svg>
+                            </div>
+                            <h3 class="experience-title">Beach Escapes</h3>
+                            <p class="experience-text">
+                                Private atoll sanctuaries in the Indonesian Archipelago, secluded Aegean sea caves, and private catamarans where the gentle rhythm of the tides sets your daily pace.
+                            </p>
+                            <ul class="experience-perks">
+                                <li>Uninhabited island drop-offs with private chefs</li>
+                                <li>Submarine reef preservation safaris</li>
+                                <li>Overwater cedar pavilions & infinity decks</li>
+                            </ul>
+                            <a href="#destinations" class="experience-link" data-filter-target="beach">
+                                <span>View Coastal Havens</span> &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 3. Cultural Journeys -->
+                    <div class="experience-card" data-exp="culture">
+                        <div class="experience-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=800&q=80" 
+                                alt="Warm lanterns glowing in a serene ancient stone garden"
+                                loading="lazy"
+                            >
+                            <div class="experience-overlay"></div>
+                            <span class="exp-badge">03 / HERITAGE</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="exp-icon-wrap">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                                    <path d="M12 21a9 9 0 0 0 9-9c0-4.97-4.03-9-9-9s-9 4.03-9 9a9 9 0 0 0 9 9Z"></path>
+                                    <path d="M12 7v5l3 3"></path>
+                                </svg>
+                            </div>
+                            <h3 class="experience-title">Cultural Journeys</h3>
+                            <p class="experience-text">
+                                Behind-closed-doors curator tours at the Louvre, sacred evening chants in Kyoto's ancient monasteries, and heritage shikara artisans preserving hundred-year-old crafts.
+                            </p>
+                            <ul class="experience-perks">
+                                <li>After-hours private access to world monuments</li>
+                                <li>One-on-one sessions with master artisans</li>
+                                <li>Historic heritage palace accommodations</li>
+                            </ul>
+                            <a href="#destinations" class="experience-link" data-filter-target="culture">
+                                <span>View Cultural Expeditions</span> &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 4. Luxury Retreats -->
+                    <div class="experience-card" data-exp="luxury">
+                        <div class="experience-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" 
+                                alt="Luxurious tropical resort with secluded pool and modern architecture"
+                                loading="lazy"
+                            >
+                            <div class="experience-overlay"></div>
+                            <span class="exp-badge">04 / SANCTUARY</span>
+                        </div>
+                        <div class="experience-content">
+                            <div class="exp-icon-wrap">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="experience-title">Luxury Retreats</h3>
+                            <p class="experience-text">
+                                Restorative wellness sanctuaries blending bespoke Ayurvedic and Japanese onsen therapies, organic biodynamic estates, and profound mental stillness.
+                            </p>
+                            <ul class="experience-perks">
+                                <li>Personal wellness master & bespoke diagnostics</li>
+                                <li>Private thermal mineral springs & hammams</li>
+                                <li>Architect-designed secluded villas</li>
+                            </ul>
+                            <a href="#destinations" class="experience-link" data-filter-target="luxury">
+                                <span>View Luxury Sanctuaries</span> &rarr;
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FEATURED TRIPS -->
+        <section class="section-padding trips-section" id="trips">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-badge">MASTERPIECE ITINERARIES</span>
+                    <h2 class="section-title">Featured Curated Trips</h2>
+                    <p class="section-subtitle">
+                        Seamless, fully hosted journeys designed with precision timing, premier accommodations, and private ground concierge.
+                    </p>
+                </div>
+
+                <div class="trips-grid">
+                    
+                    <!-- Trip 1 -->
+                    <article class="trip-card">
+                        <div class="trip-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" 
+                                alt="Alpine glacier express train winding through snowy mountain ridges"
+                                loading="lazy"
+                            >
+                            <div class="trip-badge">BESTSELLER</div>
+                            <div class="trip-duration">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>8 Days / 7 Nights</span>
+                            </div>
+                        </div>
+                        <div class="trip-body">
+                            <div class="trip-destination-tag">SWITZERLAND</div>
+                            <h3 class="trip-title">The Grand Alpine Odyssey</h3>
+                            <p class="trip-summary">
+                                Experience first-class panoramic Glacier Express carriages, private ski guides in Zermatt, and a luxury chalet stay facing the Matterhorn.
+                            </p>
+                            <div class="trip-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Group Size</span>
+                                    <span class="spec-val">Max 6 (Private)</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Season</span>
+                                    <span class="spec-val">Dec – April</span>
+                                </div>
+                            </div>
+                            <div class="trip-footer">
+                                <div class="trip-price-wrap">
+                                    <span class="trip-price-from">Starting at</span>
+                                    <span class="trip-price-val">Rs. 4,85,000 <small>/ guest</small></span>
+                                </div>
+                                <button class="btn btn-primary btn-sm btn-trip-details" data-trip="alpine">View Details</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Trip 2 -->
+                    <article class="trip-card">
+                        <div class="trip-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80" 
+                                alt="Sunset casting warm light on Santorini caldera villas and luxury yachts"
+                                loading="lazy"
+                            >
+                            <div class="trip-badge">LIMITED DEPARTURES</div>
+                            <div class="trip-duration">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>7 Days / 6 Nights</span>
+                            </div>
+                        </div>
+                        <div class="trip-body">
+                            <div class="trip-destination-tag">SANTORINI & CYCLADES</div>
+                            <h3 class="trip-title">Serenade of the Aegean</h3>
+                            <p class="trip-summary">
+                                Charter private sailing catamarans, stay in sculpted cave suites carved into the Oia cliffside, and enjoy private volcanic wine tastings.
+                            </p>
+                            <div class="trip-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Group Size</span>
+                                    <span class="spec-val">Private Couple / Family</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Season</span>
+                                    <span class="spec-val">May – Oct</span>
+                                </div>
+                            </div>
+                            <div class="trip-footer">
+                                <div class="trip-price-wrap">
+                                    <span class="trip-price-from">Starting at</span>
+                                    <span class="trip-price-val">Rs. 3,92,000 <small>/ guest</small></span>
+                                </div>
+                                <button class="btn btn-primary btn-sm btn-trip-details" data-trip="aegean">View Details</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Trip 3 -->
+                    <article class="trip-card">
+                        <div class="trip-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1595846519845-68e298c2edd8?auto=format&fit=crop&w=800&q=80" 
+                                alt="Dal Lake shimmering under morning mist with mountain backdrops"
+                                loading="lazy"
+                            >
+                            <div class="trip-badge">SIGNATURE ROUTE</div>
+                            <div class="trip-duration">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>6 Days / 5 Nights</span>
+                            </div>
+                        </div>
+                        <div class="trip-body">
+                            <div class="trip-destination-tag">KASHMIR, INDIA</div>
+                            <h3 class="trip-title">Celestial Himalayan Sojourn</h3>
+                            <p class="trip-summary">
+                                Glide across Dal Lake in vintage wooden shikaras, retreat into carved cedar houseboats, and witness snow-clad meadows in Gulmarg.
+                            </p>
+                            <div class="trip-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Group Size</span>
+                                    <span class="spec-val">2 – 8 Travelers</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Season</span>
+                                    <span class="spec-val">Year-round</span>
+                                </div>
+                            </div>
+                            <div class="trip-footer">
+                                <div class="trip-price-wrap">
+                                    <span class="trip-price-from">Starting at</span>
+                                    <span class="trip-price-val">Rs. 2,40,000 <small>/ guest</small></span>
+                                </div>
+                                <button class="btn btn-primary btn-sm btn-trip-details" data-trip="kashmir">View Details</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Trip 4 -->
+                    <article class="trip-card">
+                        <div class="trip-media">
+                            <img 
+                                src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" 
+                                alt="Pagoda surrounded by autumnal Japanese maples and serene stone walkway"
+                                loading="lazy"
+                            >
+                            <div class="trip-badge">CULTURAL IMMERSION</div>
+                            <div class="trip-duration">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span>10 Days / 9 Nights</span>
+                            </div>
+                        </div>
+                        <div class="trip-body">
+                            <div class="trip-destination-tag">JAPAN</div>
+                            <h3 class="trip-title">The Imperial Archipelago</h3>
+                            <p class="trip-summary">
+                                Travel aboard first-class Shinkansen bullet trains, lodge at centuries-old luxury ryokans with private hot springs, and attend private tea ceremonies.
+                            </p>
+                            <div class="trip-specs">
+                                <div class="spec-item">
+                                    <span class="spec-label">Group Size</span>
+                                    <span class="spec-val">Private Expedition</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Season</span>
+                                    <span class="spec-val">March – Nov</span>
+                                </div>
+                            </div>
+                            <div class="trip-footer">
+                                <div class="trip-price-wrap">
+                                    <span class="trip-price-from">Starting at</span>
+                                    <span class="trip-price-val">Rs. 5,60,000 <small>/ guest</small></span>
+                                </div>
+                                <button class="btn btn-primary btn-sm btn-trip-details" data-trip="japan">View Details</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. WHY CHOOSE WONDER ESCAPES -->
+        <section class="section-padding why-us-section" id="about">
+            <div class="section-container">
+                <div class="why-us-grid">
+                    
+                    <!-- Narrative Side -->
+                    <div class="why-us-narrative">
+                        <span class="section-badge">THE WONDER ESCAPES STANDARD</span>
+                        <h2 class="section-title">Why Choose Wonder Escapes</h2>
+                        <p class="why-us-intro">
+                            Travel is not merely an itinerary; it is an intimate conversation between you and the world's most evocative places. We design each expedition with architectural precision and heartfelt hospitality.
+                        </p>
+
+                        <div class="pillars-list">
+                            <!-- Pillar 1 -->
+                            <div class="pillar-item">
+                                <div class="pillar-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                    </svg>
+                                </div>
+                                <div class="pillar-content">
+                                    <h4 class="pillar-title">Carefully Curated Experiences</h4>
+                                    <p class="pillar-desc">
+                                        Only 2% of reviewed destinations meet our strict standard for architectural grace, environmental stewardship, and genuine peace.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Pillar 2 -->
+                            <div class="pillar-item">
+                                <div class="pillar-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="pillar-content">
+                                    <h4 class="pillar-title">Personalized Travel Planning</h4>
+                                    <p class="pillar-desc">
+                                        Our bespoke travel architects design every day around your personal tempo, gastronomic preferences, and private interests.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Pillar 3 -->
+                            <div class="pillar-item">
+                                <div class="pillar-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <div class="pillar-content">
+                                    <h4 class="pillar-title">Trusted Local Guides</h4>
+                                    <p class="pillar-desc">
+                                        Traverse ancient ruins and secret mountain passes with resident naturalists, historians, and native storytellers.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Pillar 4 -->
+                            <div class="pillar-item">
+                                <div class="pillar-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="m4.93 4.93 4.24 4.24"></path>
+                                        <path d="m14.83 9.17 4.24-4.24"></path>
+                                        <path d="m14.83 14.83 4.24 4.24"></path>
+                                        <path d="m9.17 14.83-4.24 4.24"></path>
+                                    </svg>
+                                </div>
+                                <div class="pillar-content">
+                                    <h4 class="pillar-title">Memorable Journeys</h4>
+                                    <p class="pillar-desc">
+                                        Unwavering 24/7 private concierge support, uninterrupted security, and white-glove logistics ensure complete peace of mind.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Side / Quote Card -->
+                    <div class="why-us-visual">
+                        <div class="visual-card-wrap">
+                            <img 
+                                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1000&q=80" 
+                                alt="Traveler gazing out across majestic canyon at sunset" 
+                                class="visual-img"
+                                loading="lazy"
+                            >
+                           
+                            <div class="visual-quote-box">
+                                <span class="quote-mark">“</span>
+                                <p class="quote-text">
+                                    We believe true luxury is not excess. It is space, silence, time, and the rare gift of seeing the world anew.
+                                </p>
+                                <span class="quote-author">— Wonder Escapes Editorial Board</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. TESTIMONIAL SECTION -->
+        <section class="section-padding testimonials-section" id="testimonials">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="section-badge">GUEST MEMOIRS</span>
+                    <h2 class="section-title">Words From Discerning Travelers</h2>
+                    <p class="section-subtitle">
+                        Sample testimonials illustrating the transformative experiences of our global travelers. (Demonstration Content)
+                    </p>
+                </div>
+
+                <div class="testimonials-slider-wrapper">
+                    <div class="testimonials-grid" id="testimonialsTrack">
+                        
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <span>★★★★★</span>
+                                <span class="verified-tag">Verified Expedition</span>
+                            </div>
+                            <blockquote class="testimonial-quote">
+                                “Our private journey through Kashmir and the Swiss Alps was executed with breathtaking grace. From our Dal Lake houseboat to the helicopter transfer over Zermatt, Wonder Escapes turned our honeymoon into pure poetry.”
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Elena Rostova</h4>
+                                    <p class="author-meta">Architectural Designer, Zurich &bull; Visited Kashmir & Switzerland</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <span>★★★★★</span>
+                                <span class="verified-tag">Verified Expedition</span>
+                            </div>
+                            <blockquote class="testimonial-quote">
+                                “The private temple access in Kyoto and our secluded villa in Bali exceeded every high expectation. Having an elder tea master explain centuries of tradition exclusively to our family was an unforgettable privilege.”
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Marcus Vance</h4>
+                                    <p class="author-meta">Creative Director, London &bull; Visited Japan & Bali</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <span>★★★★★</span>
+                                <span class="verified-tag">Verified Expedition</span>
+                            </div>
+                            <blockquote class="testimonial-quote">
+                                “Sailing the caldera of Santorini on a private catamaran as the twilight dipped into the Aegean was sublime. Every single boutique hotel was hand-selected with unmatched curation and warmth.”
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Sophia Laurent">
+                                </div>
+                                <div class="author-info">
+                                    <h4 class="author-name">Sophia Laurent</h4>
+                                    <p class="author-meta">Author & Cultural Historian, Paris &bull; Visited Santorini & France</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. NEWSLETTER SECTION -->
+        <section class="newsletter-section" id="newsletter">
+            <div class="section-container">
+                <div class="newsletter-card">
+                    <div class="newsletter-content text-center">
+                        <span class="newsletter-badge">THE DISPATCHES OF WONDER</span>
+                        <h2 class="newsletter-title">Subscribe to the Wonder Escapes Journal</h2>
+                        <p class="newsletter-subtitle">
+                            Receive quarterly editorial dispatches, private invitation-only departures, 
+                            and architectural essays straight to your inbox.
+                        </p>
+
+                        <!-- Interactive Form with Validation -->
+                        <form class="newsletter-form" id="newsletterForm" novalidate>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <svg class="email-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    <input 
+                                        type="email" 
+                                        id="newsletterEmail" 
+                                        class="newsletter-input" 
+                                        placeholder="Enter your email address (e.g. explorer@wonderescapes.com)..." 
+                                        required
+                                        aria-label="Email address for newsletter"
+                                    >
+                                </div>
+                                <button type="submit" class="btn btn-subscribe" id="subscribeBtn">
+                                    <span>Subscribe</span>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="form-feedback" id="newsletterFeedback" role="alert" aria-live="polite"></div>
+                        </form>
+
+                        <p class="newsletter-disclaimer">
+                            We respect your privacy. No spam, ever. Unsubscribe with a single click at any time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 9. FOOTER -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-top">
+            <div class="section-container">
+                <div class="footer-grid">
+                    
+                    <!-- Column 1: Brand Info -->
+                    <div class="footer-col footer-col-brand">
+                        <a href="#home" class="brand-logo footer-logo">
+                            <span class="logo-mark">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                                </svg>
+                            </span>
+                            <span class="brand-text">
+                                <span class="brand-name">WONDER ESCAPES</span>
+                                <span class="brand-sub">EXPEDITIONS</span>
+                            </span>
+                        </a>
+                        <p class="footer-tagline-text">
+                            <strong>Discover Beyond Boundaries.</strong> An editorial travel discovery platform engineered for extraordinary memories and mindful exploration.
+                        </p>
+                       
+                    </div>
+
+                    <!-- Column 2: Navigation -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Navigation</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#destinations">Destinations</a></li>
+                            <li><a href="#experiences">Experiences</a></li>
+                            <li><a href="#trips">Curated Trips</a></li>
+                            <li><a href="#about">Why Wonder Escapes</a></li>
+                            <li><a href="#testimonials">Guest Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Destinations -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Destinations</h4>
+                        <ul class="footer-links">
+                            <li><a href="#destinations" data-filter-dest="switzerland">Switzerland (Alps)</a></li>
+                            <li><a href="#destinations" data-filter-dest="bali">Bali (Indonesia)</a></li>
+                            <li><a href="#destinations" data-filter-dest="kashmir">Kashmir (India)</a></li>
+                            <li><a href="#destinations" data-filter-dest="paris">Paris (France)</a></li>
+                            <li><a href="#destinations" data-filter-dest="santorini">Santorini (Greece)</a></li>
+                            <li><a href="#destinations" data-filter-dest="japan">Kyoto & Fuji (Japan)</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Contact & Social -->
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Private Concierge</h4>
+                        <address class="footer-contact">
+                            <div class="contact-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <span>9318967445</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>concierge@wonderescapes-travel.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Flagship Ateliers: New York &bull; Zurich &bull; Kyoto</span>
+                            </div>
+                        </address>
+
+                        <div class="social-links">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Pinterest">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="4" x2="12" y2="20"></line>
+                                    <path d="M8 8a4 4 0 1 1 8 0c0 2.21-1.79 4-4 4"></path>
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Project">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="section-container footer-bottom-flex">
+                <p class="copyright-text">
+                    &copy; 2026 WONDER ESCAPES Expeditions Inc. All rights reserved. 
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="#home">Privacy Policy</a>
+                    <span class="sep">&bull;</span>
+                    <a href="#home">Terms of Exploration</a>
+                    <span class="sep">&bull;</span>
+                    <a href="#home">Sustainability Charter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE DESTINATION MODAL DIALOG -->
+    <div class="modal-backdrop" id="destinationModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close details dialog">&times;</button>
+            <div class="modal-media">
+                <img id="modalImage" src="" alt="Destination preview">
+                <div class="modal-tag" id="modalTag">Featured Sanctuary</div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-header-meta">
+                    <span class="modal-location" id="modalLocation">Location</span>
+                    <span class="modal-rating" id="modalRating">★ 4.98</span>
+                </div>
+                <h3 class="modal-title" id="modalTitle">Destination Title</h3>
+                <p class="modal-description" id="modalDescription">Detailed destination narrative will be populated dynamically.</p>
+                
+                <div class="modal-highlights-box">
+                    <h4 class="highlights-heading">Curated Highlights</h4>
+                    <ul class="highlights-list" id="modalHighlights">
+                        <!-- Populated by JavaScript -->
+                    </ul>
+                </div>
+
+                <div class="modal-footer-action">
+                    <div class="modal-price-wrap">
+                        <span class="modal-price-label">Estimated Package</span>
+                        <span class="modal-price-val" id="modalPrice">Rs. 4,85,000</span>
+                    </div>
+                    <button class="btn btn-primary" id="modalInquireBtn">Request Bespoke Itinerary</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FLOATING TOAST NOTIFICATION -->
+    <div class="toast-notification" id="toastNotification" role="status" aria-live="polite">
+        <div class="toast-icon" id="toastIcon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+        </div>
+        <div class="toast-body">
+            <h5 class="toast-title" id="toastTitle">Notification</h5>
+            <p class="toast-message" id="toastMessage">Action completed successfully.</p>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button class="back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
